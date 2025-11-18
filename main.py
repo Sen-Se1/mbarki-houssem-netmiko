@@ -1,7 +1,7 @@
 from netmiko import ConnectHandler
 
 device = {
-    'device_type': 'cisco_c8000V',
+    'device_type': 'cisco_xr',
     'host': 'sandbox-iosxr-1.cisco.com',
     'username': 'admin',
     'password': 'C1sco12345',
@@ -12,7 +12,7 @@ def acces_netmiko():
   net_connect = ConnectHandler(**device)
   net_connect.enable()
 
-  clock = connection.send_command("show clock")
+  clock = net_connect.send_command("show clock")
   print("date : " + clock)
 
 
@@ -24,7 +24,7 @@ def acces_netmiko():
   net_connect.disconnect()
 
 print("Hello, Git!")
-dire_bonjour()
+acces_netmiko()
 
 def dire_salut():
   print("Salut, Git!")
