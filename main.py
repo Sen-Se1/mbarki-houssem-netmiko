@@ -26,3 +26,7 @@ def acces_netmiko():
 print("Hello, Git!")
 dire_bonjour()
 
+def dire_salut():
+  print("Salut, Git!")
+
+dire_salut()
