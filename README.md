@@ -1,5 +1,4 @@
 # Mon Projet Netmiko
-# Mon Projet Netmiko
 I. Initialiser un dépôt Git local
   1. Créez un nouveau répertoire prenom-nom-netmiko pour votre projet.
     mkdir mbarki-houssem-netmiko && cd mbarki-houssem-netmiko
